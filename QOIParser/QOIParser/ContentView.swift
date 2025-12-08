@@ -15,9 +15,9 @@ struct ContentView: View {
 
     func loadData() {
         do {
-            let rootFilePath = URL.init(fileURLWithPath: #filePath).deletingLastPathComponent()
-            let data = try Data(contentsOf: URL.home.appendingPathComponent("Desktop/antelope.qoi"))
-            // let data = try Data(contentsOf: URL.home.appendingPathComponent("Desktop/tricolor.qoi"))
+            let rootFilePath = URL.init(fileURLWithPath: #filePath)
+            let url = rootFilePath.deletingLastPathComponent().appendingPathComponent("Images/antelope.qoi")
+            let data = try Data(contentsOf: url)
 
             Log4swift[Self.self].info(" loaded: '\(data.count.decimalFormatted) bytes'")
             let parser: QOI = try data.withParserSpan { buffer in

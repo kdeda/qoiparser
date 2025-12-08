@@ -33,10 +33,10 @@ struct QOIParserTests {
 
         do {
             let rootFilePath = URL.init(fileURLWithPath: #filePath).deletingLastPathComponent()
-            let url = URL.home.appendingPathComponent("Desktop/antelope.qoi")
+            let url = rootFilePath.deletingLastPathComponent().appendingPathComponent("Images/antelope.qoi")
             Log4swift[Self.self].info("loading: '\(url.path)'")
 
-            let data = try Data(contentsOf: URL.home.appendingPathComponent("Desktop/antelope.qoi"))
+            let data = try Data(contentsOf: url)
             // let data = try Data(contentsOf: URL.home.appendingPathComponent("Desktop/tricolor.qoi"))
 
             Log4swift[Self.self].info(" loaded: '\(data.count.decimalFormatted) bytes'")
