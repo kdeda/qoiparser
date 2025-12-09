@@ -77,7 +77,7 @@
       <CommandLineArguments>
          <CommandLineArgument
             argument = "-standardLog true"
-            isEnabled = "YES">
+            isEnabled = "NO">
          </CommandLineArgument>
       </CommandLineArguments>
    </LaunchAction>
