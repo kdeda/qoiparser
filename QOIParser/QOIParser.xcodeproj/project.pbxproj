@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F3A0740E2EEA318400E6369E /* Log4swift in Frameworks */ = {isa = PBXBuildFile; productRef = F3A0740D2EEA318400E6369E /* Log4swift */; };
+		F3A074112EEA31A700E6369E /* IDDSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F3A074102EEA31A700E6369E /* IDDSwift */; };
 		FB21234C2EE70EEA00602C58 /* BinaryParsing in Frameworks */ = {isa = PBXBuildFile; productRef = FB21234B2EE70EEA00602C58 /* BinaryParsing */; };
-		FB21235B2EE711A800602C58 /* Log4swift in Frameworks */ = {isa = PBXBuildFile; productRef = FB21235A2EE711A800602C58 /* Log4swift */; };
-		FB21235E2EE711EE00602C58 /* IDDSwift in Frameworks */ = {isa = PBXBuildFile; productRef = FB21235D2EE711EE00602C58 /* IDDSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,8 +33,6 @@
 		FB21231C2EE6434F00602C58 /* QOIParser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QOIParser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB2123292EE6435000602C58 /* QOIParserTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QOIParserTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB2123332EE6435000602C58 /* QOIParserUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QOIParserUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FB7BCB072EE7D2F9004DA28A /* idd-log4-swift */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "idd-log4-swift"; path = "/Users/kdeda/Developer/git.id-design.com/spm/idd-log4-swift"; sourceTree = "<absolute>"; };
-		FB7BCB082EE7D6BC004DA28A /* idd-swift */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "idd-swift"; path = "/Users/kdeda/Developer/git.id-design.com/spm/idd-swift"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -60,9 +58,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB21235B2EE711A800602C58 /* Log4swift in Frameworks */,
+				F3A0740E2EEA318400E6369E /* Log4swift in Frameworks */,
 				FB21234C2EE70EEA00602C58 /* BinaryParsing in Frameworks */,
-				FB21235E2EE711EE00602C58 /* IDDSwift in Frameworks */,
+				F3A074112EEA31A700E6369E /* IDDSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,8 +84,6 @@
 		FB2123132EE6434F00602C58 = {
 			isa = PBXGroup;
 			children = (
-				FB7BCB082EE7D6BC004DA28A /* idd-swift */,
-				FB7BCB072EE7D2F9004DA28A /* idd-log4-swift */,
 				FB21231E2EE6434F00602C58 /* QOIParser */,
 				FB21232C2EE6435000602C58 /* QOIParserTests */,
 				FB2123362EE6435000602C58 /* QOIParserUITests */,
@@ -126,8 +122,8 @@
 			name = QOIParser;
 			packageProductDependencies = (
 				FB21234B2EE70EEA00602C58 /* BinaryParsing */,
-				FB21235A2EE711A800602C58 /* Log4swift */,
-				FB21235D2EE711EE00602C58 /* IDDSwift */,
+				F3A0740D2EEA318400E6369E /* Log4swift */,
+				F3A074102EEA31A700E6369E /* IDDSwift */,
 			);
 			productName = QOIParser;
 			productReference = FB21231C2EE6434F00602C58 /* QOIParser.app */;
@@ -213,8 +209,8 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				FB21234A2EE70EEA00602C58 /* XCRemoteSwiftPackageReference "swift-binary-parsing" */,
-				FB2123592EE711A800602C58 /* XCRemoteSwiftPackageReference "idd-log4-swift" */,
-				FB21235C2EE711EE00602C58 /* XCRemoteSwiftPackageReference "idd-swift" */,
+				F3A0740C2EEA318400E6369E /* XCRemoteSwiftPackageReference "idd-log4-swift" */,
+				F3A0740F2EEA31A700E6369E /* XCRemoteSwiftPackageReference "idd-swift" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = FB21231D2EE6434F00602C58 /* Products */;
@@ -586,6 +582,22 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		F3A0740C2EEA318400E6369E /* XCRemoteSwiftPackageReference "idd-log4-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kdeda/idd-log4-swift.git";
+			requirement = {
+				kind = exactVersion;
+				version = 2.2.8;
+			};
+		};
+		F3A0740F2EEA31A700E6369E /* XCRemoteSwiftPackageReference "idd-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kdeda/idd-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.6.3;
+			};
+		};
 		FB21234A2EE70EEA00602C58 /* XCRemoteSwiftPackageReference "swift-binary-parsing" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/apple/swift-binary-parsing";
@@ -594,39 +606,23 @@
 				minimumVersion = 0.0.1;
 			};
 		};
-		FB2123592EE711A800602C58 /* XCRemoteSwiftPackageReference "idd-log4-swift" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/kdeda/idd-log4-swift.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 2.2.6;
-			};
-		};
-		FB21235C2EE711EE00602C58 /* XCRemoteSwiftPackageReference "idd-swift" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/kdeda/idd-swift.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 2.6.2;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		F3A0740D2EEA318400E6369E /* Log4swift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F3A0740C2EEA318400E6369E /* XCRemoteSwiftPackageReference "idd-log4-swift" */;
+			productName = Log4swift;
+		};
+		F3A074102EEA31A700E6369E /* IDDSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F3A0740F2EEA31A700E6369E /* XCRemoteSwiftPackageReference "idd-swift" */;
+			productName = IDDSwift;
+		};
 		FB21234B2EE70EEA00602C58 /* BinaryParsing */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = FB21234A2EE70EEA00602C58 /* XCRemoteSwiftPackageReference "swift-binary-parsing" */;
 			productName = BinaryParsing;
-		};
-		FB21235A2EE711A800602C58 /* Log4swift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = FB2123592EE711A800602C58 /* XCRemoteSwiftPackageReference "idd-log4-swift" */;
-			productName = Log4swift;
-		};
-		FB21235D2EE711EE00602C58 /* IDDSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = FB21235C2EE711EE00602C58 /* XCRemoteSwiftPackageReference "idd-swift" */;
-			productName = IDDSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

@@ -15,8 +15,8 @@ struct ContentView: View {
 
     func loadData() {
         do {
-            let rootFilePath = URL.init(fileURLWithPath: #filePath)
-            let url = rootFilePath.deletingLastPathComponent().appendingPathComponent("Images/antelope.qoi")
+            let rootFilePath = URL.init(fileURLWithPath: #filePath).deletingLastPathComponent().deletingLastPathComponent()
+            let url = rootFilePath.appendingPathComponent("Images/antelope.qoi")
             let data = try Data(contentsOf: url)
 
             Log4swift[Self.self].info(" loaded: '\(data.count.decimalFormatted) bytes'")
